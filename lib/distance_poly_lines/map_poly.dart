@@ -126,7 +126,7 @@ class MapSampleState extends State<MapSample> {
 
   Future<void> _drawRoute(LatLng start, LatLng end) async {
     // Replace 'YOUR_API_KEY' with your actual Google Directions API key
-    final String apiKey = 'AIzaSyB8QdgHqnq-oIGxB0FrxbELUmumB2OiIpY';
+    final String apiKey = 'YOUR_API_KEY';
     final response = await http.get(Uri.parse(
         'https://maps.googleapis.com/maps/api/directions/json?origin=${start.latitude},${start.longitude}&destination=${end.latitude},${end.longitude}&key=$apiKey'));
 
